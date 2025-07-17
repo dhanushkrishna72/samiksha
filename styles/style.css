@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #2563EB,   /* Blue */
+    #FACC15,   /* Yellow */
+    #14B8A6,   /* Teal */
+    #FB923C,   /* Orange */
+    #A855F7    /* Purple */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  font-family: "Funnel Display", sans-serif;
+}
