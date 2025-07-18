@@ -24,3 +24,35 @@ body{
   display: block;
   font-family: "Funnel Display", sans-serif;
 }
+
+.container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  border-radius: 24px;
+  padding: 12px;
+  margin: 0;
+  background-color: #1E293B;
+}
+
+input{
+  color: #f9fafb;
+  background-color: #1E293B;
+  padding:12px;
+}
+
+input::placeholder{
+  width: fit-content;
+}
+
+input:focus{
+  outline: none;
+  
+}
+
+button{
+  padding: 12px;
+  border-radius: 12px;
+}

@@ -13,12 +13,28 @@
 </head>
 <body class="m-0 p-0 h-screen bg-samiksha-dark w-full">
     <h1 class="block font-sans heading w-fit">Coming Soon</h1>
-    <div class="flex justify-around bg-samiksha-darkBlue text-samiksha-lightGray p-5 rounded-lg">
-
-        <input class="bg-samiksha-darkBlue focus:outline-none w-full" placeholder="Please Enter your email address" required>
-        <button class="bg-samiksha-lightGray text-samiksha-blue px-4 py-2 rounded-r-md hover:bg-primary-dark transition" type="submit">
+    <form class="container" id="subscribe-form">
+        <input placeholder="Please Enter your email address" required>
+        <button class="bg-samiksha-lightGray text-samiksha-blue px-4 py-2 rounded-r-md hover:bg-primary-dark transition"
+            type="submit">
             Notify me
         </button>
-    </div>
+    </form>
+    <script>
+        document.getElementById("notify-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const email = e.target.email.value;
+
+            const res = await fetch("/send-mail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email }),
+            });
+
+            const result = await res.json();
+            alert(result.message);
+        });
+    </script>
+
 </body>
 </html>
