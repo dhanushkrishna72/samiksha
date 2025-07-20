@@ -4,21 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samiksha Learning Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./styles/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/mainPage.css"> -->
 </head>
 <body class="m-0 p-0">
-    <div class="m-0 p-0" id="container">
+    <div class="m-0 p-0 overflow-hidden" id="container">
         <div class=" h-screen bg-samiksha-darkBlue pt-3" id="hero">
-            <nav class="flex justify-between px-5 py-2 text-samiksha-lightGray">
-                <img src="./assets/logo/stacked logo-5.png" class="h-8" alt="">
-                <ul class="flex justify-around align-middle gap-5">
-                    <a href="#hero"><li>Home</li></a>
-                    <a href="#why"><li>Why</li></a>
-                    <a href="#service"><li>Service</li></a>
-                    <a href="#team"><li>About</li></a>
-                </ul>
-                <a href="#contact"><button class="m-0 px-6 bg-samiksha-blue text-samiksha-lightGray rounded-full font-bold">Let's Talk</button></a>
+            <nav class="flex justify-center items-center px-5 py-2 text-samiksha-lightGray">
+                <!-- Logo: always visible -->
+                <img src="./assets/logo/stacked logo-5.png" class="h-8" alt="Logo" />
+            
+                <!-- Nav Links: hidden on mobile, flex from md up -->
+                <div class="hidden md:flex">
+                    <ul class="flex items-center gap-5">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#why">Why</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#team">About</a></li>
+                    </ul>
+                </div>
+            
+                <!-- Button: hidden on mobile, shown on md+ -->
+                <a href="#contact">
+                    <button class="hidden md:block px-6 bg-samiksha-blue text-samiksha-lightGray rounded-full font-bold">
+                        Let's Talk
+                    </button>
+                </a>
             </nav>
+            <div class="flex " id="mainContent">
+                <div id="left">
+                    <img src="./assets/illusttrations/undraw_math_ldpv-2.svg" alt="">
+                </div>
+                <div id="right">
+                    <h2>Tailored </h2>
+                </div>
+            </div>
         </div>
         <div class=" h-screen bg-samiksha-lightGray" id="service">
 

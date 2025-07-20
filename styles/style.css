@@ -41,10 +41,11 @@ input{
   color: #f9fafb;
   background-color: #1E293B;
   padding:12px;
+  width: 390px;
 }
 
 input::placeholder{
-  width: fit-content;
+  width: 100%;
 }
 
 input:focus{
@@ -55,4 +56,5 @@ input:focus{
 button{
   padding: 12px;
   border-radius: 12px;
+  width: 110px;
 }
