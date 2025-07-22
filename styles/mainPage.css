@@ -1,4 +1,139 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+#hero nav {
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero #mainContent {
+  display: flex;
+  padding: 1.25rem;
+}
+#hero #mainContent #left {
+  width: 50%;
+  /* padding: 1.25rem; */
+}
+#hero #mainContent #right {
+  font-size: 3rem;
+  width: 50%;
+}
+
+/* Service section Editing */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 113px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 29px;
+  color: #1E293B;
+}
+
+.content p{
+    text-align: center;
+    width: 600px;
+    color: #4B5563;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 29px;
+}
+
+.content #cardSection{
+    display: flex;
+    gap: 67px;
+}
+
+#cardSection .card{
+    width: 360px;
+    height: 418px;
+    /* border: 2px solid #1E293B; */
+    border-radius: 20px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 5%);
+    background: #fff;
+}
+
+.content .card img{
+    height: 220px;
+}
+
+.content .card h3{
+    font-family: "poppins", 'sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E293B;
+    margin: 20px 0;
+}
+
+.content .card p{
+    text-align: center;
+    width: 300px;
+    color: #6B7280;
+    line-height: 160%;
+}
+
+.content .card button{
+    background: #FACC15;
+    /* width: 141px;
+    height: 35px; */
+    border-radius: 48px;
+    padding: 8px 23px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1E293B;
+}
+
+ /* why section */
+ #why h1{
+    color: #fff;
+ }
+
+ #why p{
+    color: rgba(225, 225, 225, 70.2%);
+ }
+
+ #why .card{
+    height: 248px;
+    width: 260px;
+    background-color: #1E293B;
+    border-radius: 16px;
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #why .card h3{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    width: 212px;
+ }
+
+ #why .card p{
+    width: 220px;
+    text-align: center;
+    font-size: 14px;
+ }
+
+#why .card img{
+    width: 54px;
+    height: 54px;
 }

@@ -4,37 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samiksha Learning Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="./styles/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mainPage.css">
 </head>
-<body class="m-0 p-0 h-screen bg-samiksha-dark w-full">
-    <h1 class="block font-sans heading w-fit">Coming Soon</h1>
-    <form class="container" id="subscribe-form">
-        <input placeholder="Please Enter your email address" required>
-        <button class="bg-samiksha-lightGray text-samiksha-blue px-4 py-2 rounded-r-md hover:bg-primary-dark transition"
-            type="submit">
-            Notify me
-        </button>
-    </form>
-    <script>
-        document.getElementById("notify-form").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const email = e.target.email.value;
+<body class="m-0 p-0">
+    <div class="m-0 p-0 overflow-hidden" id="container">
+        <div class=" h-screen bg-samiksha-darkBlue pt-3" id="hero">
+            <nav class="text-samiksha-lightGray font-sans">
+                <!-- Logo: always visible -->
+                <img src="./assets/logo/stacked logo-5.png" class="h-8" alt="Logo" />
+            
+                <!-- Nav Links: hidden on mobile, flex from md up -->
+                <div class="hidden md:flex">
+                    <ul class="flex items-center gap-5">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#why">Why</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#team">About</a></li>
+                    </ul>
+                </div>
+            
+                <!-- Button: hidden on mobile, shown on md+ -->
+                <a href="#contact">
+                    <button class="hidden md:block px-6 bg-samiksha-blue text-samiksha-lightGray rounded-full font-bold">
+                        Let's Talk
+                    </button>
+                </a>
+            </nav>
+            <div id="mainContent">
+                <div id="left">
+                    <img src="./assets/illusttrations/undraw_math_ldpv-2-removebg-preview.png" alt="">
+                </div>
+                <div id="right">
+                    <h2>Tailored Learning,<br>Trusted Partnership</h2>
+                </div>
+            </div>
+        </div>
+        <div class=" h-screen bg-samiksha-lightGray" id="service">
+            <div class="content" id="serviceContent">
+                <h1>Our Core Services</h1>
+                <p>From content creation to technology, we deliver everything an education-first brand needs to scale effectively.</p>
+                <div id="cardSection">
+                    <div class="card">
+                        <img src="./assets/illusttrations/bookTranslation.png" alt="">
+                        <h3>Book Translation</h3>
+                        <p>Translate coaching content into Indian languages with accuracy.</p>
+                        <button><a href="">Learn More →</a></button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/illusttrations/contentDevelopment.png" alt="">
+                        <h3>Content Development</h3>
+                        <p>Create video and written learning material aligned to syllabi.</p>
+                        <button><a href="">Learn More →</a></button>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/illusttrations/webAppDev.png" alt="">
+                        <h3>Web & App Development</h3>
+                        <p>Build high-performing tech platforms for learning.</p>
+                        <button><a href="">Learn More →</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" h-screen bg-samiksha-dark" id="why">
+            <div class="content" id="w">
+                <h1>Why Samiksha?</h1>
+                <p>A purpose-driven team blending educational insight with practical tech solutions — built for institutions, educators,
+                and learners.
+                </p>
+                <div id="cardSection">
+                    <div class="card">
+                        <img src="./assets/icons/person.svg" alt="">
+                        <h3>Built by Educators & Engineers</h3>
+                        <p>Your project is handled by a team that understands both how to teach and how to build.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/language.svg" alt="">
+                        <h3>Multilingual Expertise</h3>
+                        <p>We translate and localize content with cultural and academic relevance across Indian languages.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/people-idea.svg" alt="">
+                        <h3>Reliable Collaboration</h3>
+                        <p>Direct communication, flexible timelines, and smooth coordination tailored to your goals.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/icons/code.svg" alt="">
+                        <h3>Content + Code, Together</h3>
+                        <p>From coaching material to full-stack apps, you get a unified solution under one roof.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" h-screen bg-samiksha-lightGray" id="team">
+        
+        </div>
+        <div class=" h-screen bg-samiksha-darkBlue" id="contact">
+        
+        </div>
+        <div class="h-screen bg-samiksha-dark text-center" id="footer">
+            <div class="h-1/2 bg-samiksha-yellow pt-8" id="cta">
+                <h2 class="my-8 font-bold">Let’s Build Something Meaningful</h2>
+                <p class="w-[43ch] mb-4 leading-5  align-middle">Ready to create, scale, or translate your educational content? Let’ s do it together.</p>
+                <a href="mailto:samiksha.learning@gmail.com"
+                    class="inline-block bg-samiksha-darkBlue text-white px-5 py-2 rounded-full hover:bg-samiksha-darkBlue transition">
+                    Start a Project
+                </a>
 
-            const res = await fetch("/send-mail", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email }),
-            });
-
-            const result = await res.json();
-            alert(result.message);
-        });
-    </script>
-
+            </div>
+        
+        </div>
+    </div>
 </body>
 </html>
