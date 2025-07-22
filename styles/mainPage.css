@@ -108,6 +108,10 @@ body {
     color: rgba(225, 225, 225, 70.2%);
  }
 
+#why #cardSection{
+    margin-top: 96px;
+}
+
  #why .card{
     height: 248px;
     width: 260px;
