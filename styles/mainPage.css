@@ -19,10 +19,39 @@ body {
   /* padding: 1.25rem; */
 }
 #hero #mainContent #right {
-  font-size: 3rem;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+#mainContent #right h2{
+    /* border: 2px solid #000; */
+    color: #fff;
+    height: 138px;
+    width: 580px;
+    line-height: 69px;
+    font-size: 56px;
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#mainContent #right span{
+    color: #FACC15;
+}
+#mainContent #right p{
+    width: 600px;
+    color: rgba(225, 225, 225, 70.2%);
+    font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
 /* Service section Editing */
 .content {
   display: flex;
