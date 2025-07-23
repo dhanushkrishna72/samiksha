@@ -38,106 +38,173 @@ body {
   font-weight: 400;
   font-style: normal;
   margin-bottom: 29px;
-  color: #1E293B;
+  color: #1e293b;
 }
 
-.content p{
-    text-align: center;
-    width: 600px;
-    color: #4B5563;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 29px;
+.content p {
+  text-align: center;
+  width: 600px;
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 29px;
 }
 
-.content #cardSection{
-    display: flex;
-    gap: 67px;
+.content #cardSection {
+  display: flex;
+  gap: 67px;
 }
 
-#cardSection .card{
-    width: 360px;
-    height: 418px;
-    /* border: 2px solid #1E293B; */
-    border-radius: 20px;
-    padding-bottom: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 5%);
-    background: #fff;
+#cardSection .card {
+  width: 360px;
+  height: 418px;
+  /* border: 2px solid #1E293B; */
+  border-radius: 20px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 5%);
+  background: #fff;
 }
 
-.content .card img{
-    height: 220px;
+.content .card img {
+  height: 220px;
 }
 
-.content .card h3{
-    font-family: "poppins", 'sans';
-    font-size: 18px;
-    font-weight: bold;
-    color: #1E293B;
-    margin: 20px 0;
+.content .card h3 {
+  font-family: "poppins", "sans";
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 20px 0;
 }
 
-.content .card p{
-    text-align: center;
-    width: 300px;
-    color: #6B7280;
-    line-height: 160%;
+.content .card p {
+  text-align: center;
+  width: 300px;
+  color: #6b7280;
+  line-height: 160%;
 }
 
-.content .card button{
-    background: #FACC15;
-    /* width: 141px;
+.content .card button {
+  background: #facc15;
+  /* width: 141px;
     height: 35px; */
-    border-radius: 48px;
-    padding: 8px 23px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #1E293B;
+  border-radius: 48px;
+  padding: 8px 23px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e293b;
 }
 
- /* why section */
- #why h1{
-    color: #fff;
- }
-
- #why p{
-    color: rgba(225, 225, 225, 70.2%);
- }
-
-#why #cardSection{
-    margin-top: 96px;
+/* why section */
+#why h1 {
+  color: #fff;
 }
 
- #why .card{
-    height: 248px;
-    width: 260px;
-    background-color: #1E293B;
-    border-radius: 16px;
-    padding: 24px 0px;
+#why p {
+  color: rgba(225, 225, 225, 70.2%);
+}
+
+#why #cardSection {
+  margin-top: 96px;
+}
+
+#why .card {
+  height: 248px;
+  width: 260px;
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#why .card h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  width: 212px;
+}
+
+#why .card p {
+  width: 220px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#why .card img {
+  width: 54px;
+  height: 54px;
+}
+
+/* Team Section */
+
+#team .teamContent{
+    padding: 113px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
- }
+  align-items: center;
+}
+.teamContent h2{
+    font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: #1e293b;
+}
 
- #why .card h3{
+.teamContent p{
+    width: 560px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 160%;
+  color: #4B5563;
+  margin: 31px 0px;
+  
+}
+
+.teamContent img{
+    width: 548px;
+}
+
+/* Footer Section */
+#footer #cta {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#footer #cta h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+  color: #1e293b;
+  margin-top: 50px;
+  margin-bottom: 12px;
+  line-height: 160%;
+}
+#footer #cta p {
+  width: 300px;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 160%;
+  margin-bottom: 48px;
+}
+#footer #cta a{
     color: #fff;
-    text-align: center;
-    font-size: 16px;
-    width: 212px;
- }
-
- #why .card p{
-    width: 220px;
-    text-align: center;
-    font-size: 14px;
- }
-
-#why .card img{
-    width: 54px;
-    height: 54px;
+    background: #1e293b;
+    padding: 20px 32px;
+    border-radius: 48px;
 }
