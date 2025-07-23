@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* overflow: hidden; */
 }
 
@@ -221,6 +222,76 @@ body {
 
 .teamContent img{
     width: 548px;
+}
+
+/* Contact Section */
+#contact {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #fff;
+  line-height: 160%;
+}
+
+#contact p{
+  width: 600px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 160%;
+  color: rgba(225, 225, 225, 70.2%);
+}
+#contact form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  /* width: 300px; */
+}
+#contact form .contactInputs{
+  /* padding: 1rem; */
+  width: 400px;
+  height: 50px;
+  padding-left: 25px;
+  border: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4B5563;
+  border-radius: 50px;
+}
+#contact form .contactInputs::placeholder{
+  color: #6b7280;
+}
+
+#contact form #text{
+  padding-top: 12px;
+  border-radius: 20px;
+  height: 120px;
+}
+
+
+#contact form button {
+  background: #facc15;
+  width: 141px;
+    height: 50px;
+  border-radius: 48px;
+  padding: 8px 23px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1e293b;
 }
 
 /* Footer Section */
