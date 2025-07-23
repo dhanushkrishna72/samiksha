@@ -12,9 +12,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-#hero #mainContent {
+#mainContent {
   display: flex;
-  padding: 1.25rem;
+  /* justify-content: center; */
+  align-items: center;
+  padding:1.25rem;
+  height: 100vh;
 }
 #hero #mainContent #left {
   width: 50%;
