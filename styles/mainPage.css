@@ -1,11 +1,21 @@
+:root {
+  --primary: #facc15;
+  --dark: #1e293b;
+  --light: #e5e7eb;
+  --grayText: rgba(225, 225, 225, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  font-family: "poppins", "sans";
-  /* overflow: hidden; */
+  font-family: "Poppins", sans-serif;
+  background: #fff;
 }
-
+/* Hero section */
 #hero nav {
   padding: 0.5rem 1.25rem;
   display: flex;
@@ -235,6 +245,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  box-sizing: border-box;
+
 }
 
 #contact h2{
@@ -337,4 +349,289 @@ body {
     justify-content: center;
     align-items: center;
     color: rgba(225, 225, 225, 40%);
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background-color: #1e293b;
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(270deg, #facc15, #2563EB, #ec4899, #2563EB);
+  background-size: 800% 800%;
+  animation: animatedGradient 4s ease infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:hover {
+  color: #1e293b;
+  background-color: transparent;
+}
+  
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+/* Responsive code */
+
+
+/* Breakpoint: ≤ 1200px (small desktops / tablets) */
+@media (max-width: 1200px) {
+  #mainContent {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #mainContent #left, 
+  #mainContent #right {
+    width: 100%;
+  }
+
+  #mainContent #right h2 {
+    width: 100%;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    height: auto;
+  }
+
+  #mainContent #right p {
+    width: 90%;
+  }
+
+  .content {
+    padding: 60px 40px;
+  }
+
+  .content p,
+  #contact p,
+  .teamContent p {
+    width: 100%;
+  }
+
+  #cardSection {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  #cardSection .card {
+    width: 300px;
+  }
+
+  #why #cardSection {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #why .card {
+    width: 240px;
+  }
+
+  .teamContent img {
+    width: 100%;
+  }
+
+  #contact form .contactInputs {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #footer #cta h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+/* Breakpoint: ≤ 992px (tablet landscape and mobile) */
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  #mainContent #right h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  #cardSection .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .teamContent {
+    padding: 80px 20px;
+  }
+
+  .teamContent p {
+    font-size: 15px;
+  }
+
+  #contact h2 {
+    font-size: 32px;
+  }
+
+  #contact form .contactInputs {
+    max-width: 90%;
+  }
+}
+
+/* Breakpoint: ≤ 768px (tablet portrait / large phones) */
+@media (max-width: 430px) {
+  /* Hero Section */
+  #mainContent {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  #hero #mainContent #left,
+  #hero #mainContent #right {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #mainContent #right h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    height: auto;
+    text-align: center;
+  }
+
+  #mainContent #right p {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 1rem;
+  }
+
+  #mainContent #right button {
+    width: 100%;
+    font-size: 16px;
+    height: 48px;
+    margin: 8px 0;
+  }
+
+  /* Card Sections (Services & Why) */
+  #service{
+    height: auto;
+  }
+  #cardSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #cardSection .card {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    padding: 1rem;
+  }
+
+  #cardSection .card p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Team Section */
+  .teamContent {
+    padding: 2rem 1rem;
+  }
+
+  .teamContent p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .teamContent img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  #contact h2 {
+    font-size: 22px;
+  }
+
+  #contact p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #contact form .contactInputs {
+    width: 100%;
+    font-size: 14px;
+    height: 44px;
+    padding-left: 16px;
+  }
+
+  #contact form #text {
+    height: 100px;
+  }
+
+  #contact form button {
+    width: 100%;
+    font-size: 16px;
+    height: 44px;
+  }
+
+  /* Footer */
+  #footer #cta h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #footer #cta p {
+    font-size: 12px;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #footer #cta a {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  #footer .credits {
+    font-size: 12px;
+    text-align: center;
+    padding: 1rem;
+  }
 }
