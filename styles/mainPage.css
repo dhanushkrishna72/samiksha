@@ -20,7 +20,7 @@ body {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  /* padding: 0.75rem 1.5rem; */
   color: white;
   background-color: #1e293b;
   border: none;
