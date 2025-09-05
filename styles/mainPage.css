@@ -529,7 +529,8 @@ body {
   #hero nav img {
     height: 3rem;
   }
-  nav > div {
+  nav > div,
+  nav > a {
     display: none;
   }
   #mainContent {
