@@ -521,6 +521,17 @@ body {
 /* Breakpoint: ≤ 768px (tablet portrait / large phones) */
 @media (max-width: 430px) {
   /* Hero Section */
+  #hero nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero nav img {
+    height: 3rem;
+  }
+  nav > div {
+    display: none;
+  }
   #mainContent {
     flex-direction: column;
     padding: 1rem;
