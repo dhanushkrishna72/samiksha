@@ -16,7 +16,6 @@ body {
   background: #fff;
 }
 
-
 .btn {
   position: relative;
   display: inline-block;
@@ -34,9 +33,11 @@ body {
 .btn::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(270deg, #facc15, #2563EB, #ec4899, #2563EB);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #facc15, #2563eb, #ec4899, #2563eb);
   background-size: 800% 800%;
   animation: animatedGradient 4s ease infinite;
   z-index: -1;
@@ -54,11 +55,17 @@ body {
   background-color: transparent;
   border: solid 1px transparent;
 }
-  
+
 @keyframes animatedGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Hero section */
@@ -70,9 +77,10 @@ body {
 }
 #mainContent {
   display: flex;
+  /* flex-wrap: wrap; */
   /* justify-content: center; */
   align-items: center;
-  padding:1.25rem;
+  padding: 1.25rem;
   height: 100vh;
 }
 #hero #mainContent #left {
@@ -87,25 +95,25 @@ body {
   flex-direction: column;
 }
 
-#mainContent #right h2{
-    /* border: 2px solid #000; */
-    color: #fff;
-    height: 138px;
-    width: 580px;
-    line-height: 69px;
-    font-size: 56px;
-    text-align: right;
-    font-family: "Poppins", sans-serif;
+#mainContent #right h2 {
+  /* border: 2px solid #000; */
+  color: #fff;
+  height: 138px;
+  width: 580px;
+  line-height: 69px;
+  font-size: 56px;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-#mainContent #right span{
-    color: #FACC15;
+#mainContent #right span {
+  color: #facc15;
 }
-#mainContent #right p{
-    width: 600px;
-    color: rgba(225, 225, 225, 70.2%);
-    font-family: "Lato", sans-serif;
+#mainContent #right p {
+  width: 600px;
+  color: rgba(225, 225, 225, 70.2%);
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 24px;
@@ -113,23 +121,23 @@ body {
   margin-top: 24px;
   margin-bottom: 40px;
 }
-#mainContent #right button{
-    width: 250px;
-    height: 57px;
-    border-radius: 48px;
-    font-family: "Poppins", sans-serif;
+#mainContent #right button {
+  width: 250px;
+  height: 57px;
+  border-radius: 48px;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 22px;
   margin: 0px 8px;
 }
-#mainContent #right #explore{
-    background: #FACC15;
-    color: #1e293b;
+#mainContent #right #explore {
+  background: #facc15;
+  color: #1e293b;
 }
-#mainContent #right #contactBtn{
-    border: 4px solid rgba(225, 225, 225, 70.2%);
-    color: #fff;
+#mainContent #right #contactBtn {
+  border: 4px solid rgba(225, 225, 225, 70.2%);
+  color: #fff;
 }
 /* Service section Editing */
 .content {
@@ -138,6 +146,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 80px 113px;
+  /* height: auto; */
 }
 
 .content h1 {
@@ -253,36 +262,35 @@ body {
 
 /* Team Section */
 
-#team .teamContent{
-    padding: 113px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#team .teamContent {
+  padding: 113px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.teamContent h2{
-    font-family: "Poppins", sans-serif;
+.teamContent h2 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 36px;
   color: #1e293b;
 }
 
-.teamContent p{
-    width: 560px;
+.teamContent p {
+  width: 560px;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 160%;
-  color: #4B5563;
+  color: #4b5563;
   margin: 31px 0px;
-  
 }
 
-.teamContent img{
-    width: 548px;
+.teamContent img {
+  width: 548px;
 }
 
 /* Contact Section */
@@ -292,10 +300,9 @@ body {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-
 }
 
-#contact h2{
+#contact h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -304,7 +311,7 @@ body {
   line-height: 160%;
 }
 
-#contact p{
+#contact p {
   width: 600px;
   font-size: 18px;
   font-family: "Lato", sans-serif;
@@ -313,7 +320,7 @@ body {
   line-height: 160%;
   color: rgba(225, 225, 225, 70.2%);
 }
-#contact form{
+#contact form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,7 +329,7 @@ body {
   margin-top: 20px;
   /* width: 300px; */
 }
-#contact form .contactInputs{
+#contact form .contactInputs {
   /* padding: 1rem; */
   width: 400px;
   height: 50px;
@@ -332,24 +339,23 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #4B5563;
+  color: #4b5563;
   border-radius: 50px;
 }
-#contact form .contactInputs::placeholder{
+#contact form .contactInputs::placeholder {
   color: #6b7280;
 }
 
-#contact form #text{
+#contact form #text {
   padding-top: 12px;
   border-radius: 20px;
   height: 120px;
 }
 
-
 #contact form button {
   background: #facc15;
   width: 141px;
-    height: 50px;
+  height: 50px;
   border-radius: 48px;
   padding: 8px 23px;
   font-size: 14px;
@@ -383,26 +389,21 @@ body {
   line-height: 160%;
   margin-bottom: 48px;
 }
-#footer #cta a{
-    color: #fff;
-    background: #1e293b;
-    padding: 20px 32px;
-    border-radius: 48px;
+#footer #cta a {
+  color: #fff;
+  background: #1e293b;
+  padding: 20px 32px;
+  border-radius: 48px;
 }
 
-#footer .credits{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(225, 225, 225, 40%);
+#footer .credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(225, 225, 225, 40%);
 }
-
-
-
-
 
 /* Responsive code */
-
 
 /* Breakpoint: ≤ 1200px (small desktops / tablets) */
 @media (max-width: 1200px) {
@@ -414,7 +415,7 @@ body {
     text-align: center;
   }
 
-  #mainContent #left, 
+  #mainContent #left,
   #mainContent #right {
     width: 100%;
   }
@@ -479,7 +480,7 @@ body {
 /* Breakpoint: ≤ 992px (tablet landscape and mobile) */
 @media (max-width: 992px) {
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.75rem;
   }
 
@@ -548,7 +549,7 @@ body {
   }
 
   /* Card Sections (Services & Why) */
-  #service{
+  #service {
     height: auto;
   }
   #cardSection {
@@ -596,6 +597,10 @@ body {
   #contact p {
     width: 100%;
     font-size: 14px;
+  }
+
+  #contact form {
+    max-width: 750px;
   }
 
   #contact form .contactInputs {
