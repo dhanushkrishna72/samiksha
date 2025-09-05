@@ -75,6 +75,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+#hero nav img {
+  height: 3rem;
+}
 #mainContent {
   display: flex;
   /* flex-wrap: wrap; */
