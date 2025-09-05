@@ -143,6 +143,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   padding: 80px 113px;
@@ -169,6 +170,7 @@ body {
 
 .content #cardSection {
   display: flex;
+  flex-wrap: wrap;
   gap: 67px;
 }
 
