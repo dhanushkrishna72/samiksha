@@ -230,6 +230,8 @@ body {
 
 #why #cardSection {
   margin-top: 96px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #why .card {
